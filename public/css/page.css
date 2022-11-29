@@ -1,0 +1,87 @@
+#appstore .apstore,#googleplay .gplay{
+    border:1px solid #fff;
+    border-radius:5px;
+    margin:0 3px;
+    padding:0 10px;
+    height:48px
+}
+#appstore .apstore:hover,#googleplay .gplay:hover{
+    border:1px solid #375d79;
+}
+.cbtn{
+    background-color:orange;
+    color:#fff;
+}
+.cbtn:hover{
+    border: 1px solid orange;
+    background-color:#fff;
+    color:#000;
+}
+.cbtn2{
+    border: 1px solid orange;
+    background-color:#fff;
+    color:#000;
+}
+.cbtn2:hover{
+    background-color:orange;
+    color:#fff;
+}
+
+.icon-box:hover, .cart-toggle:hover, .btn-close:hover, .input-wrapper button:hover{color:#375d79 !important;}
+.product-media .btn-close:hover{border-color:#375d79 !important;}
+.product-detail .product-name:hover{color:#375d79 !important;}
+
+.header-right a:hover, .header-right .dropdown a:focus{color:#375d79 !important;}
+.input-wrapper #search{color:#375d79; font-size: 16px;}
+
+.cart-action .btn-dark:hover{background-color:#375d79 !important; color: #fff !important;}
+.category-menu-content .category:hover{background-color:#fff !important; color: #375d79 !important; cursor: pointer; transition:0.3s ease-out; margin-bottom: 4px; padding-left:5px;padding-right:5px;}
+
+.uploddiv{
+    width: 100%;
+    min-height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 40px 0;
+}
+
+.contain{
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.defaultChec{
+    cursor: pointer;
+    display: none; 
+}
+
+.ck{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px; 
+    display: none; 
+    color: #375d79;
+}
+
+.contain input[type="checkbox"]:checked ~ .ck{
+    display: block; 
+}
+
+.passimg:hover + .ck{
+    display: block; 
+}
+
+#conmt{
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.rmv{
+    position: absolute;
+    top:0;
+    left: 70px;
+    font-size: 20px; 
+}

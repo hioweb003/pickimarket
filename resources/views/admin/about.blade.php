@@ -1,0 +1,44 @@
+@extends('layouts.admin')
+@section('title')
+    About
+@endsection
+@section('adpagename')
+  About
+@endsection
+@section('admincontent')
+  <!-- Main-body start -->
+  <div class="main-body">
+    <div class="page-wrapper">
+        <!-- Page-body start -->
+        <div class="page-body">
+            <div class="card my-4">
+                <div class="card-header"> <h4>About Company</h4></div>
+                <div class="card-body">
+                   @include('includes.errors')
+                   <div class="col-md-12">
+                       
+                       <form action="{{route('about.biosave')}}" method="post">
+                           @csrf
+                                    <div class="container">
+                                  
+                                   <div class="form-group">
+                                   
+                                   <textarea name="content" id="content" cols="30" rows="10">@if($abt ?? ""){!!$abt->content!!}@endif</textarea>
+                                   </div>
+               
+                                    <div class="form-group">
+                                       <input type="submit" name="saveabout" id="saveabout" class="btn btn-primary"  value="Save About">
+                                   </div>                         
+                 </form>
+               </div>    
+            </div> 
+          </div>
+       </div> 
+  </div> 
+</div> 
+@endsection
+@section('script')
+     <script>
+      CKEDITOR.replace('content');
+      </script>
+@endsection
